@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <script src="/javascripts/popper.min.js" charset="utf-8"></script>
+  <link rel="stylesheet" type="text/css" href="/stylesheets/bootstrap.min.css">
+  <script src="/javascripts/jquery-3.2.1.slim.min.js" charset="utf-8"></script>
+  <script src="/javascripts/bootstrap.min.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand navbar-light border-bottom ">
+      <a href="/" ><img  src="/images/chicken.png" width="60" height="60"></a>
+    <div class="collapse navbar-collapse" id="navbarNav">
+
+      <button class="btn btn-dark ml-auto" type="submit">
+        Cluck!
+      </button>
+
+      <% if (username) { %>
+          <span class="navbar-text text-black ml-auto mr-3">
+            Hello, <%= username %>!
+          </span>
+
+          <form action="/sign_out" method="POST" class="form-inline">
+            <button class="btn btn-dark ml-2 " style=" margin: 10 " type="submit">
+              Sign OUT
+            </button>
+          </form>
+        <% } else { %>
+          <button class="btn btn-dark ml-2 " style=" margin: 10 " type="submit">
+            Sign In
+          </button>
+        <% } %>
+
+
+    </nav>
+
+
+
+
+
+    </div>
+  </nav>

@@ -1,0 +1,71 @@
+\l
+\l
+\dt
+\c fotorol_dev
+\dt
+\dt
+ls
+..
+?
+help
+\q
+\dt
+\g 
+\h
+\?
+\dt todo_list
+\dt oDo_Lit
+\dt oDo_List
+\dt toDo_List
+\d
+\dt
+?
+\?
+\d
+\c
+\c todo_list
+\c todo_dev
+\dt
+ls
+\dt
+\dt
+\dt
+\q
+\c todo_dev
+/dt
+\dt
+ls
+ls
+cd ..
+ls
+\q
+\l
+\q
+\dt
+\q
+\c codecorequiz1
+\c codecore_quiz1
+/dt
+\dt
+\dt posts
+\dt posts
+?
+\h
+help
+\help
+?
+\?
+\dT
+\dt
+\t
+\t
+\?
+\dn
+\?
+\d
+\?
+\dp
+\dq
+\dp
+\c posts
+\s posts

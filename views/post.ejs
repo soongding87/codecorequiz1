@@ -1,0 +1,50 @@
+<%- include('partials/header') %>
+
+
+
+<form class=" bg-light col-8 m-4 border px-1" action="/cluck"
+            method="POST" >
+  <div class="form-group mt-2">
+    <label for="contets" class="col-2 control-label text-secondary">contents</label>
+    <div class="col-10">
+      <textarea class="d-flex col-10 " id="contents" placeholder="here is contents" name="contents"></textarea>
+    </div>
+  </div>
+
+  <div class="form-group" >
+    <label for="imgurl" class="col-4 control-label text-secondary">image Url</label>
+    <div class="col-10">
+      <input type="text" class="form-control" id="imgurl" placeholder="www." name="imgurl">
+    </div>
+  </div>
+  <div class="d-flex flex-row-reverse m-2">
+      <button type="submit" class="btn btn-light text-secondary border col-6">Cluck!</button>
+
+  </div>
+</form>
+
+
+ <% if(posts) { %>
+   <% for(i=0; i < posts.length; i++) { %>
+     <form class="form-group col-8 mt2 border bg-light">
+     <div>
+     <img width="50px" height:"50px" src="/images/chicken.png" />
+     </div>
+
+    <p>  Name: <%= posts[i].username %> <br/>
+      <%= posts[i].content %></p>
+      <img height="400px" width="400px" src=<%= posts[i].image_url %> /><br/>
+      <%= posts[i].created_at %>
+
+    </form>
+   <% } %>
+ <% }%>
+
+</div>
+
+
+
+</body>
+
+
+</html>
